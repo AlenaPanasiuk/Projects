@@ -109,8 +109,6 @@ namespace UnitTestProject4
             driver.FindElement(By.Id("btnWizardDefault")).Click();
             wait.Until(ExpectedConditions.ElementToBeClickable(By.Id("btnWizardDefault")));
             
-
-
              //Go to Repository page
 
             driver.FindElement(By.Id("createRepository")).Click();
