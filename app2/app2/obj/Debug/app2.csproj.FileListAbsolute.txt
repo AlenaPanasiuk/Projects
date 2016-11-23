@@ -1,0 +1,6 @@
+c:\studio 2013\Projects\app2\app2\bin\Debug\app2.exe.config
+c:\studio 2013\Projects\app2\app2\bin\Debug\app2.exe
+c:\studio 2013\Projects\app2\app2\bin\Debug\app2.pdb
+c:\studio 2013\Projects\app2\app2\obj\Debug\app2.csprojResolveAssemblyReference.cache
+c:\studio 2013\Projects\app2\app2\obj\Debug\app2.exe
+c:\studio 2013\Projects\app2\app2\obj\Debug\app2.pdb

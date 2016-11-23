@@ -1,0 +1,1 @@
+c:\studio 2013\Projects\DPRRUpdater\DPRRUpdater\bin\Debug\DPRRUpdater.exe.config
