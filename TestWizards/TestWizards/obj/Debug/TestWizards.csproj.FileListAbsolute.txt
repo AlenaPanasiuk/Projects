@@ -29,3 +29,12 @@ C:\studio 2013\Projects\TestWizards\TestWizards\bin\Debug\NLog.dll
 C:\studio 2013\Projects\TestWizards\TestWizards\bin\Debug\Gibraltar.Agent.dll
 C:\studio 2013\Projects\TestWizards\TestWizards\bin\Debug\ServiceHost.InMemoryHosting.dll
 C:\studio 2013\Projects\TestWizards\TestWizards\bin\Debug\Microsoft.Http.Extensions.dll
+C:\studio 2013\Projects\TestWizards\TestWizards\bin\Debug\Selenium.WebDriver.Extensions.QuerySelector.dll
+C:\studio 2013\Projects\TestWizards\TestWizards\bin\Debug\Selenium.WebDriver.Extensions.Shared.dll
+C:\studio 2013\Projects\TestWizards\TestWizards\bin\Debug\SeleniumShim20.dll
+C:\studio 2013\Projects\TestWizards\TestWizards\bin\Debug\Autofac.dll
+C:\studio 2013\Projects\TestWizards\TestWizards\bin\Debug\nunit.framework.dll
+C:\studio 2013\Projects\TestWizards\TestWizards\bin\Debug\WebDriverFactoryDotNet.dll
+C:\studio 2013\Projects\TestWizards\TestWizards\bin\Debug\Autofac.xml
+C:\studio 2013\Projects\TestWizards\TestWizards\bin\Debug\nunit.framework.xml
+C:\studio 2013\Projects\TestWizards\TestWizards\bin\Debug\WebDriverFactoryDotNet.xml

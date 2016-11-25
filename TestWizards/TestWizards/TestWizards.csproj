@@ -6,7 +6,7 @@
     <ProjectGuid>{8F942BC1-7FBC-43FE-9173-8C6AFE549219}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TestWizards</RootNamespace>
+    <RootNamespace>TestAutomation</RootNamespace>
     <AssemblyName>TestWizards</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -41,6 +41,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Autofac">
+      <HintPath>..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
+    </Reference>
     <Reference Include="Common.Contracts">
       <HintPath>..\..\..\..\Users\Administrator\Downloads\API-Reference-7.0.0-13786\AppRecoveryAPISamples\Dependencies\Common.Contracts.dll</HintPath>
     </Reference>
@@ -65,25 +68,45 @@
     <Reference Include="Logging">
       <HintPath>..\..\..\..\Users\Administrator\Downloads\API-Reference-7.0.0-13786\AppRecoveryAPISamples\Dependencies\Logging.dll</HintPath>
     </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.3.5.0\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
     <Reference Include="Reporting.Contracts">
       <HintPath>..\..\..\..\Users\Administrator\Downloads\API-Reference-7.0.0-13786\AppRecoveryAPISamples\Dependencies\Reporting.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Selenium.WebDriver.Extensions.QuerySelector">
+      <HintPath>..\packages\Selenium.WebDriver.Extensions.QuerySelector.1.1.166\lib\net45\Selenium.WebDriver.Extensions.QuerySelector.dll</HintPath>
+    </Reference>
+    <Reference Include="Selenium.WebDriver.Extensions.Shared">
+      <HintPath>..\packages\Selenium.WebDriver.Extensions.Shared.1.1.114\lib\Selenium.WebDriver.Extensions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="SeleniumShim20">
+      <HintPath>..\packages\SeleniumShim20.1.2.5731.21604\lib\net45\SeleniumShim20.dll</HintPath>
     </Reference>
     <Reference Include="ServiceHost.Contracts">
       <HintPath>..\..\..\..\Users\Administrator\Downloads\API-Reference-7.0.0-13786\AppRecoveryAPISamples\Dependencies\ServiceHost.Contracts.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml.Serialization" />
     <Reference Include="WCFClient.Contracts">
       <HintPath>..\..\..\..\Users\Administrator\Downloads\API-Reference-7.0.0-13786\AppRecoveryAPISamples\Dependencies\WCFClient.Contracts.dll</HintPath>
     </Reference>
     <Reference Include="WCFClientBase">
       <HintPath>..\..\..\..\Users\Administrator\Downloads\API-Reference-7.0.0-13786\AppRecoveryAPISamples\Dependencies\WCFClientBase.dll</HintPath>
     </Reference>
-    <Reference Include="WebDriver">
-      <HintPath>..\packages\Selenium.WebDriver.3.0.0\lib\net40\WebDriver.dll</HintPath>
+    <Reference Include="WebDriver, Version=3.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Selenium.WebDriver.3.0.1\lib\net40\WebDriver.dll</HintPath>
     </Reference>
-    <Reference Include="WebDriver.Support">
-      <HintPath>..\packages\Selenium.Support.3.0.0\lib\net40\WebDriver.Support.dll</HintPath>
+    <Reference Include="WebDriver.Support, Version=3.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Selenium.Support.3.0.1\lib\net40\WebDriver.Support.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriverFactoryDotNet">
+      <HintPath>..\packages\VDMSOpenQA.WebDriverFactory.DotNet.2.0.4.125\lib\net451\WebDriverFactoryDotNet.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Choose>
@@ -99,8 +122,9 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="MainPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebDriveFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

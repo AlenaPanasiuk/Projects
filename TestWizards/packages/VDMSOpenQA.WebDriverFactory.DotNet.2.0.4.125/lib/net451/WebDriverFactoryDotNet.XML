@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebDriverFactoryDotNet</name>
+    </assembly>
+    <members>
+        <member name="T:WebDriverFactoryDotNet.IWebDriverFactory">
+            <summary>
+            WebDriverFactory Interface
+            </summary>
+        </member>
+        <member name="M:WebDriverFactoryDotNet.IWebDriverFactory.NewWebDriver">
+            <summary>
+            Creates a new WebDriver
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:WebDriverFactoryDotNet.WebDriverFactory">
+            <summary>
+            Creates instances of Selenium WebDriver based on App.config settings.
+            </summary>
+        </member>
+        <member name="M:WebDriverFactoryDotNet.WebDriverFactory.#ctor">
+            <summary>
+            Constructor for new WebDriverFactory
+            </summary>
+        </member>
+        <member name="M:WebDriverFactoryDotNet.WebDriverFactory.NewWebDriver">
+            <summary>
+            Creates a new WebDriver instance.
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

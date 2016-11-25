@@ -1,0 +1,22 @@
+﻿<?xml version="1.0"?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <configSections xdt:Transform="InsertIfMissing">
+    <section name="WebDriverFactory" 
+             type="WebDriverFactoryDotNet.Config.WebDriverFactorySection, WebDriverFactoryDotNet" 
+             xdt:Locator="Match(name)"
+             xdt:Transform="InsertIfMissing"/>
+  </configSections>
+
+  <WebDriverFactory browser="FireFox" xdt:Transform="InsertIfMissing">
+<!--    Configure Desired Capabilities if browser=Remote-->
+<!--    <DesiredCapabilities url="http://localhost:4444/wd/hub" browser="Firefox">-->
+<!--      <capabilities>-->
+<!--        <capability name="CAPABILITY1" value="VALUE1" />-->
+<!--        <capability name="CAPABILITY2" value="VALUE2" />-->
+<!--      </capabilities>-->
+<!--    </DesiredCapabilities>-->
+  </WebDriverFactory>
+
+</configuration>
+
+

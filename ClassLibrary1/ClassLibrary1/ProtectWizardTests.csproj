@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{201AB1A2-E20C-4BCC-AFFF-6CFB0937E764}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProtectWizardTests</RootNamespace>
+    <AssemblyName>ProtectWizardTests</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>f296056d</NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Agent.Contracts">
+      <HintPath>..\..\..\..\Users\Administrator\Downloads\API-Reference-7.0.0-13786\AppRecoveryAPISamples\Dependencies\Agent.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Attributes">
+      <HintPath>..\..\..\..\Users\Administrator\Downloads\API-Reference-7.0.0-13786\AppRecoveryAPISamples\Dependencies\Attributes.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Contracts">
+      <HintPath>..\..\..\..\Users\Administrator\Downloads\API-Reference-7.0.0-13786\AppRecoveryAPISamples\Dependencies\Common.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.DataContracts">
+      <HintPath>..\..\..\..\Users\Administrator\Downloads\API-Reference-7.0.0-13786\AppRecoveryAPISamples\Dependencies\Common.DataContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Core.Client">
+      <HintPath>..\..\..\..\Users\Administrator\Downloads\API-Reference-7.0.0-13786\AppRecoveryAPISamples\Dependencies\Core.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Core.Contracts">
+      <HintPath>..\..\..\..\Users\Administrator\Downloads\API-Reference-7.0.0-13786\AppRecoveryAPISamples\Dependencies\Core.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Core.DataContracts">
+      <HintPath>..\..\..\..\Users\Administrator\Downloads\API-Reference-7.0.0-13786\AppRecoveryAPISamples\Dependencies\Core.DataContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="DatabaseClient.Contracts">
+      <HintPath>..\..\..\..\Users\Administrator\Downloads\API-Reference-7.0.0-13786\AppRecoveryAPISamples\Dependencies\DatabaseClient.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Gibraltar.Agent">
+      <HintPath>..\..\..\..\Users\Administrator\Downloads\API-Reference-7.0.0-13786\AppRecoveryAPISamples\Dependencies\Gibraltar.Agent.dll</HintPath>
+    </Reference>
+    <Reference Include="LicensePortal.PhoneHome.WebServices.DataContracts">
+      <HintPath>..\..\..\..\Users\Administrator\Downloads\API-Reference-7.0.0-13786\AppRecoveryAPISamples\Dependencies\LicensePortal.PhoneHome.WebServices.DataContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Localization.Base.Contracts">
+      <HintPath>..\..\..\..\Users\Administrator\Downloads\API-Reference-7.0.0-13786\AppRecoveryAPISamples\Dependencies\Localization.Base.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Logging">
+      <HintPath>..\..\..\..\Users\Administrator\Downloads\API-Reference-7.0.0-13786\AppRecoveryAPISamples\Dependencies\Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Http">
+      <HintPath>..\..\..\..\Users\Administrator\Downloads\API-Reference-7.0.0-13786\AppRecoveryAPISamples\Dependencies\Microsoft.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Http.Extensions">
+      <HintPath>..\..\..\..\Users\Administrator\Downloads\API-Reference-7.0.0-13786\AppRecoveryAPISamples\Dependencies\Microsoft.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog">
+      <HintPath>..\..\..\..\Users\Administrator\Downloads\API-Reference-7.0.0-13786\AppRecoveryAPISamples\Dependencies\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.3.5.0\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="O3E.Contracts">
+      <HintPath>..\..\..\..\Users\Administrator\Downloads\API-Reference-7.0.0-13786\AppRecoveryAPISamples\Dependencies\O3E.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Profiling">
+      <HintPath>..\..\..\..\Users\Administrator\Downloads\API-Reference-7.0.0-13786\AppRecoveryAPISamples\Dependencies\Profiling.dll</HintPath>
+    </Reference>
+    <Reference Include="Reporting.Contracts">
+      <HintPath>..\..\..\..\Users\Administrator\Downloads\API-Reference-7.0.0-13786\AppRecoveryAPISamples\Dependencies\Reporting.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceHost.Contracts">
+      <HintPath>..\..\..\..\Users\Administrator\Downloads\API-Reference-7.0.0-13786\AppRecoveryAPISamples\Dependencies\ServiceHost.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceHost.Implementation">
+      <HintPath>..\..\..\..\Users\Administrator\Downloads\API-Reference-7.0.0-13786\AppRecoveryAPISamples\Dependencies\ServiceHost.Implementation.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceHost.InMemoryHosting">
+      <HintPath>..\..\..\..\Users\Administrator\Downloads\API-Reference-7.0.0-13786\AppRecoveryAPISamples\Dependencies\ServiceHost.InMemoryHosting.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WCFClient.Contracts">
+      <HintPath>..\..\..\..\Users\Administrator\Downloads\API-Reference-7.0.0-13786\AppRecoveryAPISamples\Dependencies\WCFClient.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="WCFClientBase">
+      <HintPath>..\..\..\..\Users\Administrator\Downloads\API-Reference-7.0.0-13786\AppRecoveryAPISamples\Dependencies\WCFClientBase.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver">
+      <HintPath>..\packages\Selenium.WebDriver.3.0.1\lib\net40\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support">
+      <HintPath>..\packages\Selenium.Support.3.0.1\lib\net40\WebDriver.Support.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Helpers\APIHelpers.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Steps\ProtectionStep.cs" />
+    <Compile Include="Steps\UpgradeStep.cs" />
+    <Compile Include="Steps\ConnectionStep.cs" />
+    <Compile Include="Steps\StepBase.cs" />
+    <Compile Include="Steps\VolumesStep.cs" />
+    <Compile Include="Steps\WelcomeStep.cs" />
+    <Compile Include="Test.cs" />
+    <Compile Include="TestBase.cs" />
+    <Compile Include="WebDriveFactory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AutoItX3Lib">
+      <Guid>{F8937E53-D444-4E71-9275-35B64210CC3B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Selenium.WebDriver.ChromeDriver.2.25.0.8\build\Selenium.WebDriver.ChromeDriver.targets" Condition="Exists('..\packages\Selenium.WebDriver.ChromeDriver.2.25.0.8\build\Selenium.WebDriver.ChromeDriver.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Selenium.WebDriver.ChromeDriver.2.25.0.8\build\Selenium.WebDriver.ChromeDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.WebDriver.ChromeDriver.2.25.0.8\build\Selenium.WebDriver.ChromeDriver.targets'))" />
+    <Error Condition="!Exists('..\packages\Selenium.WebDriver.IEDriver.3.0.0.1\build\Selenium.WebDriver.IEDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.WebDriver.IEDriver.3.0.0.1\build\Selenium.WebDriver.IEDriver.targets'))" />
+  </Target>
+  <Import Project="..\packages\Selenium.WebDriver.IEDriver.3.0.0.1\build\Selenium.WebDriver.IEDriver.targets" Condition="Exists('..\packages\Selenium.WebDriver.IEDriver.3.0.0.1\build\Selenium.WebDriver.IEDriver.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
