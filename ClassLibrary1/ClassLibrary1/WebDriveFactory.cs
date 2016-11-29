@@ -28,7 +28,7 @@ namespace ProtectWizardTests
         [OneTimeTearDown]
         public void TestFixtureTearnDown()
         {
-            Driver.Quit();
+            //Driver.Quit();
         }
 
         /// <summary>

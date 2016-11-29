@@ -10,8 +10,6 @@ namespace ProtectWizardTests.Steps
 {
     public class ProtectionStep : StepBase
     {
-        private const string Agent1IP = "10.35.176.166";
-
         public ProtectionStep(IWebDriver driver)
             : base(driver)
         {
@@ -19,16 +17,30 @@ namespace ProtectWizardTests.Steps
 
         public void SetProtectionValues(string name, ProtectionSchedule schedule, bool changeRepo)
         {
-            driver.FindElement(By.Id("displayName")).Clear();
-            driver.FindElement(By.Id("displayName")).SendKeys(name);
+            IWebElement keepcurrentcheckbox = null;
+            try
+            {
+                keepcurrentcheckbox = driver.FindElement(By.Id("restoreProtection"));
+            }
+            catch
+            { }
+            if (driver.FindElement(By.Id("displayName")).Enabled)
+            {
+                driver.FindElement(By.Id("displayName")).Clear();
+                driver.FindElement(By.Id("displayName")).SendKeys(name);
+            }
 
             if (schedule == ProtectionSchedule.Default) 
             { 
                 driver.FindElement(By.Id("defaultProtection")).Click(); 
             }
-            else 
+            else if (schedule == ProtectionSchedule.Custom)
             {
                 driver.FindElement(By.Id("customProtection")).Click();
+            }
+            else if (schedule == ProtectionSchedule.KeepCurrent && keepcurrentcheckbox != null)
+            {
+                driver.FindElement(By.Id("restoreProtection")).Click();
             }
 
             if (changeRepo)
@@ -44,28 +56,30 @@ namespace ProtectWizardTests.Steps
 
         public override void SetValidData()
         {
-            SetProtectionValues(Agent1IP, ProtectionSchedule.Default, false);
+            SetProtectionValues(TestBase.Agent1IP, ProtectionSchedule.Default, false);
         }
 
         public ProtectionStep GoToProtectionStep(ProtectionType type)
         {
-          string stepID = "";
-            WelcomeStep welcome = new WelcomeStep(driver);
+            var welcome = new WelcomeStep(driver);
             welcome.SetProtectionType(type);
-            welcome.GoNext();
-            ConnectionStep connection = new ConnectionStep(driver);
+            
+            var connection = (ConnectionStep)welcome.GoNext();
             connection.SetValidData();
-            connection.GoNext();
-            stepID = connection.GetStepId();
-            if (stepID == "upgrade")
-                connection.GoNext();
-            return new ProtectionStep(driver);
+            
+            var next = connection.GoNext();
+            if (next.GetStepId() == "upgrade")
+            { 
+                next = next.GoNext(); 
+            }
+
+            return (ProtectionStep)next;
 
         }
 
         public override void SetCustomeValidData()
         {
-            SetProtectionValues(Agent1IP, ProtectionSchedule.Custom, false);
+            SetProtectionValues(TestBase.Agent1IP, ProtectionSchedule.Custom, false);
         }
         public override StepBase GetNext()
         {
@@ -76,6 +90,7 @@ namespace ProtectWizardTests.Steps
     public enum ProtectionSchedule
     {
         Default,
-        Custom
+        Custom,
+        KeepCurrent
     }
 }

@@ -10,11 +10,6 @@ namespace ProtectWizardTests.Steps
 {
     public class ConnectionStep : StepBase
     {
-        private const string Agent1IP = "10.35.176.166";
-        private const string Agent1Port = "8006";
-        private const string Agent1UserName = "administrator";
-        private const string Agent1Password = "123asdQ";
-
         public ConnectionStep(IWebDriver driver)
             : base(driver)
         {
@@ -31,7 +26,7 @@ namespace ProtectWizardTests.Steps
 
         public override void SetValidData()
         {
-            SetConnectionValues(Agent1IP, Agent1Port, Agent1UserName, Agent1Password);
+            SetConnectionValues(TestBase.Agent1IP, TestBase.Agent1Port, TestBase.Agent1UserName, TestBase.Agent1Password);
         }
 
 
@@ -39,8 +34,8 @@ namespace ProtectWizardTests.Steps
         {
             WelcomeStep welcome = new WelcomeStep(driver);
             welcome.SetProtectionType(ProtectionType.Typical);
-            welcome.GoNext();
-            return new ConnectionStep(driver);
+            var connection = (ConnectionStep)welcome.GoNext();
+            return connection;
            
         }
 
@@ -48,8 +43,8 @@ namespace ProtectWizardTests.Steps
         {
             WelcomeStep welcome = new WelcomeStep(driver);
             welcome.SetProtectionType(ProtectionType.Advanced);
-            welcome.GoNext();
-            return new ConnectionStep(driver);
+            var connection = (ConnectionStep)welcome.GoNext();
+            return connection;
         }
 
         public override StepBase GetNext()

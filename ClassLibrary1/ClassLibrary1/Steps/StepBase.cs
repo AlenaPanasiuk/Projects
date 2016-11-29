@@ -54,7 +54,6 @@ namespace ProtectWizardTests.Steps
             }
             catch
             {
-                stepId = "";
             }
             return stepId;
         }
@@ -85,7 +84,6 @@ namespace ProtectWizardTests.Steps
                 {
                     wait.Until(ExpectedConditions.InvisibilityOfElementLocated(By.Id("lpLoading")));
                 }
-                i++;
             }
         }
 

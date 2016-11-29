@@ -28,13 +28,14 @@ namespace ProtectWizardTests
     [TestFixture(BrowserType.IE)]
     public class TestBase : WebDriveFactory
     {
-        private const string Agent1IP = "10.35.176.166";
-        private const string Agent1UserName = "administrator";
-        private const string Agent1Password = "123asdQ";
-        private const string CoreHost = "10.35.176.167";
-        private const string CoreUserName = "administrator";
-        private const string CorePassword = "123asdQ";
-        private const int CorePort = 8006;
+        public const string Agent1IP = "10.35.176.166";
+        public const string Agent1UserName = "administrator";
+        public const string Agent1Password = "123asdQ";
+        public const string CoreHost = "10.35.176.167";
+        public const string CoreUserName = "administrator";
+        public const string CorePassword = "123asdQ";
+        public const string Agent1Port = "8006";
+        public const int CorePort = 8006;
         private string url = String.Format("https://{0}:{1}@{2}:{3}/apprecovery/admin", CoreUserName, CorePassword, CoreHost, CorePort);
       
 
@@ -63,7 +64,7 @@ namespace ProtectWizardTests
         {
             APIHelpers helper = new APIHelpers(CoreHost, CorePort);
             helper.TestResults();
-            helper.DeleteAgents();
+            //helper.DeleteAgents();
             
 
         }

@@ -33,20 +33,45 @@ namespace ProtectWizardTests.Steps
             
         }
 
-        public void SetSchedulePeriods(bool weekdays, bool weekends, bool protectWeekdaysRest, string from, string to, string weekdaysPeriopd, string weekendPeriod)
+        public void SetSchedulePeriods(bool weekdays, bool weekends, bool protectWeekdaysRest, string from, string to, string weekdaysPeriopd, string weekendsPeriod, string weekdaysRestPeriod)
         {
+            driver.FindElement(By.Id("periods")).Click();
             if (weekdays)
             {
-                driver.FindElement(By.Id("periods")).Click();
-                
+               // driver.FindElement(By.Id("protectWeekdays")).Click();
                 driver.FindElement(By.Id("weekdaysFrom")).FindElement(By.TagName("input")).Clear();
                 driver.FindElement(By.Id("weekdaysFrom")).FindElement(By.TagName("input")).SendKeys(from);
                
                 driver.FindElement(By.Id("weekdaysTo")).FindElement(By.TagName("input")).Clear();
                 driver.FindElement(By.Id("weekdaysTo")).FindElement(By.TagName("input")).SendKeys(to);
 
-                driver.FindElement(By.Id("weekdaysRow")).FindElement(By.TagName("input")).Clear();
-                driver.FindElement(By.ClassName("weekdaysRow")).FindElement(By.TagName("input")).SendKeys(weekdaysPeriopd);
+                driver.FindElement(By.Id("weekdaysPeriod")).Clear();
+                driver.FindElement(By.Id("weekdaysPeriod")).SendKeys(weekdaysPeriopd);
+                if (protectWeekdaysRest)
+                {
+                    driver.FindElement(By.Id("protectWeekdaysRest")).Click();
+                    driver.FindElement(By.Id("weekdaysRestPeriod")).Clear();
+                    driver.FindElement(By.Id("weekdaysRestPeriod")).SendKeys(weekdaysRestPeriod);
+
+                }
+            }
+            if (weekends)
+            {
+               // driver.FindElement(By.Id("protectWeekends")).Click();
+                driver.FindElement(By.Id("weekendsPeriod")).Clear();
+                driver.FindElement(By.Id("weekendsPeriod")).SendKeys(weekendsPeriod);
+
+            }
+
+
+
+            if (!weekdays)
+            {
+                driver.FindElement(By.Id("protectWeekdays")).Click();
+            }
+            if (!weekends)
+            {
+                driver.FindElement(By.Id("protectWeekends")).Click();
             }
 
 
