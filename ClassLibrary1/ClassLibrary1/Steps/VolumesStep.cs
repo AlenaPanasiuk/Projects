@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ProtectWizardTests.Steps;
 
 namespace ProtectWizardTests.Steps
 {
@@ -19,18 +20,51 @@ namespace ProtectWizardTests.Steps
             return new VolumesStep(driver);
         }
 
-        public override void SetCustomeValidData()
+        public override void SetValidData()
         {
-            SelectVolumes("all");
+            SelectVolumes(Volumes.All);
         }
 
-        public void SelectVolumes(string volumes)
+        public VolumesStep GoToVolumesStep(ProtectionType type)
         {
-           // this.SetValidData();
-            int count;
-            count =  driver.FindElement(By.Id("gview_wizardVolumesGrid")).FindElement(By.Id("wizardVolumesGrid")).FindElements(By.ClassName("checkbox")).Count();
- 
+            ProtectionStep protection = new ProtectionStep(driver);
+            protection.GoToProtectionStep(type);
+
+            protection.SetProtectionValues("Agent1IP", ProtectionSchedule.Custom, false);
+            protection.GoNext();
+            return new VolumesStep(driver);
         }
 
+        public void SelectVolumes(Volumes volumes)
+        {
+          int count;
+          count = driver.FindElement(By.Id("gview_wizardVolumesGrid")).FindElement(By.Id("wizardVolumesGrid")).FindElements(By.ClassName("checkbox")).Count();
+          IList<IWebElement> listvolumes = driver.FindElement(By.Id("gview_wizardVolumesGrid")).FindElement(By.Id("wizardVolumesGrid")).FindElements(By.ClassName("checkbox"));
+            if (volumes == Volumes.None)
+            {
+               foreach (IWebElement volume in listvolumes)
+               {
+                   volume.Click();
+               }
+            }
+
+            if (volumes == Volumes.Fisrt)
+            {
+                foreach (IWebElement volume in listvolumes)
+                {
+                    volume.Click();
+                }
+                listvolumes[0].Click();
+            }
+        }
+
+
+
+    }
+    public enum Volumes
+    {
+        All,
+        Fisrt,
+        None
     }
 }

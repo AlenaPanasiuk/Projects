@@ -39,6 +39,26 @@ namespace ProtectWizardTests.Steps
             return stepName;
         }
 
+        public string GetStepId()
+        {
+            string stepId = "";
+            try
+            {
+                driver.FindElement(By.Id("wizardContentContainer"));
+                wait.Until(ExpectedConditions.ElementToBeClickable(By.Id("wizardContentContainer")));
+                stepId = driver
+                .FindElement(By.Id("wizardLegendContainer"))
+                .FindElement(By.ClassName("active-step"))
+                .FindElement(By.TagName("a"))
+                .GetAttribute("id").ToString(); 
+            }
+            catch
+            {
+                stepId = "";
+            }
+            return stepId;
+        }
+
         public StepBase GoNext()
         {
             if (driver.FindElement((By.Id("wizardContentContainer"))) != null)

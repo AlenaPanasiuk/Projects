@@ -123,6 +123,7 @@
     <Compile Include="Helpers\APIHelpers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Steps\ProtectionStep.cs" />
+    <Compile Include="Steps\ScheduleStep.cs" />
     <Compile Include="Steps\UpgradeStep.cs" />
     <Compile Include="Steps\ConnectionStep.cs" />
     <Compile Include="Steps\StepBase.cs" />

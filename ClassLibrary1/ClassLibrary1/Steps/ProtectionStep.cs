@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ProtectWizardTests.Steps;
 
 namespace ProtectWizardTests.Steps
 {
@@ -44,6 +45,22 @@ namespace ProtectWizardTests.Steps
         public override void SetValidData()
         {
             SetProtectionValues(Agent1IP, ProtectionSchedule.Default, false);
+        }
+
+        public ProtectionStep GoToProtectionStep(ProtectionType type)
+        {
+          string stepID = "";
+            WelcomeStep welcome = new WelcomeStep(driver);
+            welcome.SetProtectionType(type);
+            welcome.GoNext();
+            ConnectionStep connection = new ConnectionStep(driver);
+            connection.SetValidData();
+            connection.GoNext();
+            stepID = connection.GetStepId();
+            if (stepID == "upgrade")
+                connection.GoNext();
+            return new ProtectionStep(driver);
+
         }
 
         public override void SetCustomeValidData()

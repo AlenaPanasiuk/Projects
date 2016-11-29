@@ -29,12 +29,10 @@ namespace ProtectWizardTests.Steps
             }
         }
 
-
-        public enum ProtectionType
-        {
-            Typical,
-            Advanced
-        }
-
+    }
+    public enum ProtectionType
+    {
+        Typical,
+        Advanced
     }
 }

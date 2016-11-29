@@ -36,6 +36,7 @@ namespace ProtectWizardTests
         private const string CorePassword = "123asdQ";
         private const int CorePort = 8006;
         private string url = String.Format("https://{0}:{1}@{2}:{3}/apprecovery/admin", CoreUserName, CorePassword, CoreHost, CorePort);
+      
 
         public TestBase(BrowserType browser)
             : base( browser)
@@ -47,8 +48,8 @@ namespace ProtectWizardTests
         public void OpenWizard()
         {
             Driver.Navigate().GoToUrl(url);
-
             WebDriverWait wait = new WebDriverWait(Driver, new TimeSpan(0, 0, 900));
+
             wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath("//*[@id='protectEntity']")));
 
             Driver.FindElement(By.XPath(".//*[@id='protectEntity']")).Click();
@@ -94,5 +95,6 @@ namespace ProtectWizardTests
             Default,
             Custom
         }
+
     }
 }
