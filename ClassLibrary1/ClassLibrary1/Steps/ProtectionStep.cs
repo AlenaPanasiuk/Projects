@@ -24,6 +24,7 @@ namespace ProtectWizardTests.Steps
             }
             catch
             { }
+
             if (driver.FindElement(By.Id("displayName")).Enabled)
             {
                 driver.FindElement(By.Id("displayName")).Clear();
