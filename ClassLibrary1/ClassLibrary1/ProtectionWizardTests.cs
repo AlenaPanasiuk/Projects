@@ -88,7 +88,7 @@ namespace ProtectWizardTests
             string protection = "protection";
             var protectionStep = new ProtectionStep(Driver);
             protectionStep.GoToProtectionStep(ProtectionType.Advanced);
-            protectionStep.SetValidData();
+            protectionStep.SetProtectionValues("aaaa", ProtectionSchedule.Custom, false);
             var next = protectionStep.GoNext();
             Assert.AreNotEqual(next.GetStepId(), protection);
         }
