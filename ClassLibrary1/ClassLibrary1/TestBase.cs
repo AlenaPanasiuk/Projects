@@ -36,7 +36,7 @@ namespace ProtectWizardTests
         public const string CorePassword = "123asdQ";
         public const string Agent1Port = "8006";
         public const int CorePort = 8006;
-        private string url = String.Format("https://{0}:{1}@{2}:{3}/apprecovery/admin", CoreUserName, CorePassword, CoreHost, CorePort);
+        public string url = String.Format("https://{0}:{1}@{2}:{3}/apprecovery/admin", CoreUserName, CorePassword, CoreHost, CorePort);
 
         public TestBase(BrowserType browser)
             : base( browser)
