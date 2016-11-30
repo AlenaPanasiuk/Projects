@@ -38,10 +38,9 @@ namespace ProtectWizardTests.Steps
             driver.FindElement(By.Id("periods")).Click();
             if (weekdays)
             {
-               // driver.FindElement(By.Id("protectWeekdays")).Click();
                 driver.FindElement(By.Id("weekdaysFrom")).FindElement(By.TagName("input")).Clear();
                 driver.FindElement(By.Id("weekdaysFrom")).FindElement(By.TagName("input")).SendKeys(from);
-               
+
                 driver.FindElement(By.Id("weekdaysTo")).FindElement(By.TagName("input")).Clear();
                 driver.FindElement(By.Id("weekdaysTo")).FindElement(By.TagName("input")).SendKeys(to);
 
@@ -55,25 +54,19 @@ namespace ProtectWizardTests.Steps
 
                 }
             }
-            if (weekends)
-            {
-               // driver.FindElement(By.Id("protectWeekends")).Click();
-                driver.FindElement(By.Id("weekendsPeriod")).Clear();
-                driver.FindElement(By.Id("weekendsPeriod")).SendKeys(weekendsPeriod);
-
-            }
-
-
-
-            if (!weekdays)
+            else 
             {
                 driver.FindElement(By.Id("protectWeekdays")).Click();
             }
-            if (!weekends)
+            if (weekends)
+            {
+                driver.FindElement(By.Id("weekendsPeriod")).Clear();
+                driver.FindElement(By.Id("weekendsPeriod")).SendKeys(weekendsPeriod);
+            }
+            else 
             {
                 driver.FindElement(By.Id("protectWeekends")).Click();
             }
-
 
         }
         public void SetScheduleDaily()

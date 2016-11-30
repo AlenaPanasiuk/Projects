@@ -13,6 +13,7 @@ using NUnit.Framework;
 using OpenQA.Selenium.IE;
 using OpenQA.Selenium.PhantomJS;
 using OpenQA.Selenium.Support;
+using OpenQA.Selenium.Remote;
 
 namespace ProtectWizardTests
 {
@@ -28,7 +29,7 @@ namespace ProtectWizardTests
         [OneTimeTearDown]
         public void TestFixtureTearnDown()
         {
-            //Driver.Quit();
+            Driver.Quit();
         }
 
         /// <summary>
@@ -67,6 +68,8 @@ namespace ProtectWizardTests
         /// <returns>A new instance of IEDriverServer</returns>
         private static IWebDriver IeDriver()
         {
+
+
             InternetExplorerOptions options = new InternetExplorerOptions();
             options.EnsureCleanSession = true;
             IWebDriver driver = new InternetExplorerDriver(options);

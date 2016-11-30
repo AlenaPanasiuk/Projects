@@ -54,11 +54,9 @@ namespace ProtectWizardTests.Steps
                 {
                     volume.Click();
                 }
-                listvolumes[0].Click();
+                listvolumes.First().Click();
             }
         }
-
-
 
     }
     public enum Volumes

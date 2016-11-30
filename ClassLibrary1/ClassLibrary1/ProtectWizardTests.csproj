@@ -122,6 +122,9 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="ThoughtWorks.Selenium.Core">
+      <HintPath>..\packages\Selenium.RC.3.0.1\lib\net40\ThoughtWorks.Selenium.Core.dll</HintPath>
+    </Reference>
     <Reference Include="WCFClient.Contracts">
       <HintPath>..\..\..\API-Reference-7.0.0-13880\AppRecoveryAPISamples\Dependencies\WCFClient.Contracts.dll</HintPath>
     </Reference>
