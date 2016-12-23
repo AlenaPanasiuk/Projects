@@ -1,0 +1,72 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ArchiveWizardTests.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="CloudAmazonSecretKey" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SIfSYxUrGfsaeLJVXi1jv4P9IuFcoy0fAdrKdKvl</Value>
+    </Setting>
+    <Setting Name="CloudAmazonAccessKey" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">AKIAI4XMTRIJYZT3UIAA</Value>
+    </Setting>
+    <Setting Name="CloudAzureAccountDisplayName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">AzureAccount</Value>
+    </Setting>
+    <Setting Name="CloudAzureAccessKey" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">64Pb2atsQXr3MF4zj+A9Dxnq4F07/WeL8SxZze4U0POg5Ck5dugmXKbFODXMQ2cqz5CdPFk8A8Am1/5r0dQ38A==</Value>
+    </Setting>
+    <Setting Name="CloudAzureStorageAccountName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">teamk</Value>
+    </Setting>
+    <Setting Name="CloudOpenStackAccountDisplayName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">OpenStackAccount</Value>
+    </Setting>
+    <Setting Name="CloudOpenStackUserName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">andriy.kutcik</Value>
+    </Setting>
+    <Setting Name="CloudOpenStackAPIKey" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">29f9a99be1d14de5aede64f5386a8be9</Value>
+    </Setting>
+    <Setting Name="CloudRackspaceAccountDisplayName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">RackspaceAccount</Value>
+    </Setting>
+    <Setting Name="RepositorySizeGB" Type="System.UInt64" Scope="Application">
+      <Value Profile="(Default)">6</Value>
+    </Setting>
+    <Setting Name="CoreHostName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">10.35.176.170</Value>
+    </Setting>
+    <Setting Name="CorePort" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">8006</Value>
+    </Setting>
+    <Setting Name="RepositoryPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\repositoryTestArchive</Value>
+    </Setting>
+    <Setting Name="RepositoryMetadataPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\repositoryMetadataTestArchive</Value>
+    </Setting>
+    <Setting Name="RepositoryName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">RepositoryForArchive</Value>
+    </Setting>
+    <Setting Name="CloudAmazoneAccountDisplayName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">AmazoneAccountNew</Value>
+    </Setting>
+    <Setting Name="AgentHostName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">10.35.176.166</Value>
+    </Setting>
+    <Setting Name="AgentApiPort" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">8006</Value>
+    </Setting>
+    <Setting Name="AgentUserName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">administrator</Value>
+    </Setting>
+    <Setting Name="AgentPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">123asdQ</Value>
+    </Setting>
+    <Setting Name="AgentDisplayName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">agent1</Value>
+    </Setting>
+    <Setting Name="AgentSmallVolumeToProtect" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">E:\</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

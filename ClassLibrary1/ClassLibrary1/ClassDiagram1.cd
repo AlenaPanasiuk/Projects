@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ProtectWizardTests.Helpers.APIHelpers" Collapsed="true">
+    <Position X="26.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAIAAAAAABAAAAAAAQAgAABgAAEAAAAA=</HashCode>
+      <FileName>Helpers\APIHelpers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProtectWizardTests.StepsProtectWizard.ProtectionStep" Collapsed="true">
+    <Position X="3.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAABAAAAAQIAAAAAAAAAAAA=</HashCode>
+      <FileName>StepsProtectWizard\ProtectionStep.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProtectWizardTests.StepsProtectWizard.ConfigurationStep" Collapsed="true">
+    <Position X="15" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAACAAAAAAAAAAAAAABAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>StepsProtectWizard\ConfigurationStep.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProtectWizardTests.StepsProtectWizard.ConnectionStep" Collapsed="true">
+    <Position X="6" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAABAAAEAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>StepsProtectWizard\ConnectionStep.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProtectWizardTests.StepsProtectWizard.EncryptionStep" Collapsed="true">
+    <Position X="10.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAgAAAAAAABAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>StepsProtectWizard\EncryptionStep.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProtectWizardTests.StepsProtectWizard.InstallStep" Collapsed="true">
+    <Position X="17.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAABAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>StepsProtectWizard\InstallStep.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProtectWizardTests.StepsProtectWizard.RepositoryStep" Collapsed="true">
+    <Position X="21.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAABAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>StepsProtectWizard\RepositoryStep.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProtectWizardTests.StepsProtectWizard.ScheduleStep" Collapsed="true">
+    <Position X="8.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAABAAAAAAIAAAAAAAAAQAA=</HashCode>
+      <FileName>StepsProtectWizard\ScheduleStep.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProtectWizardTests.StepsProtectWizard.StepBase" Collapsed="true">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAIAAAAIACAAAQAAAAAACBAAAAAAIEAEAAAAAABIA=</HashCode>
+      <FileName>StepsProtectWizard\StepBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProtectWizardTests.StepsProtectWizard.UpgradeStep" Collapsed="true">
+    <Position X="24" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAABAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>StepsProtectWizard\UpgradeStep.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProtectWizardTests.StepsProtectWizard.VolumesStep" Collapsed="true">
+    <Position X="1.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIQAAAAAAAAAAAAAAAAABAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>StepsProtectWizard\VolumesStep.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProtectWizardTests.StepsProtectWizard.WarningsStep" Collapsed="true">
+    <Position X="12.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAABAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>StepsProtectWizard\WarningsStep.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProtectWizardTests.StepsProtectWizard.WelcomeStep" Collapsed="true">
+    <Position X="19.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAABAAAAAAIgAAAAAAAAAAA=</HashCode>
+      <FileName>StepsProtectWizard\WelcomeStep.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProtectWizardTests.ProtectionWizardTests" Collapsed="true">
+    <Position X="0.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAVIAJAAgQAAAACAACBQBgAAAAAAAChAAQAA=</HashCode>
+      <FileName>ProtectionWizardTests.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProtectWizardTests.TestBase" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAgAAAQQAAAAEAAAAAAgAAgAMAKAAAAIAAEAAAAA=</HashCode>
+      <FileName>TestBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProtectWizardTests.WebDriveFactory" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAgAAQAAAAAAIgAAAAAAIAAAAAAA=</HashCode>
+      <FileName>WebDriveFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="ProtectWizardTests.StepsProtectWizard.ProtectionSchedule" Collapsed="true">
+    <Position X="28.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAgAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StepsProtectWizard\ProtectionStep.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ProtectWizardTests.StepsProtectWizard.BytesPerSector" Collapsed="true">
+    <Position X="26.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJkAAAA=</HashCode>
+      <FileName>StepsProtectWizard\ConfigurationStep.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ProtectWizardTests.StepsProtectWizard.WriteCachingPolicy" Collapsed="true">
+    <Position X="26.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>StepsProtectWizard\ConfigurationStep.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ProtectWizardTests.StepsProtectWizard.RepositoryLocationType" Collapsed="true">
+    <Position X="26.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAGAAAA=</HashCode>
+      <FileName>StepsProtectWizard\RepositoryStep.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ProtectWizardTests.StepsProtectWizard.Schedule" Collapsed="true">
+    <Position X="28.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StepsProtectWizard\ScheduleStep.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ProtectWizardTests.StepsProtectWizard.Volumes" Collapsed="true">
+    <Position X="30" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAIAAAAEAAAA=</HashCode>
+      <FileName>StepsProtectWizard\VolumesStep.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ProtectWizardTests.StepsProtectWizard.ProtectionType" Collapsed="true">
+    <Position X="30" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>StepsProtectWizard\WelcomeStep.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
